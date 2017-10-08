@@ -10,6 +10,9 @@ import {
   Input,
   Label,
   Menu,
+  Segment,
+  Title,
+  Subtitle,
 } from 'semantic-ui-react'
 import './Drive.css';
 
@@ -26,6 +29,10 @@ class Drive extends Component {
     return (
       <div>
         <Menu secondary fixed='top' size='big' style={{backgroundColor: 'white'}}>
+          <Menu.Item name='gamepad' active={activeItem === 'gamepad'} onClick={this.handleItemClick}>
+            <Image src='./large-heart-logo.png' avatar />
+            <span>Wuji</span>
+          </Menu.Item>
           <Menu.Item name='Ride' active={activeItem === 'ride'} onClick={this.handleItemClick} />
           <Menu.Item name='Drive' active={activeItem === 'drive'} onClick={this.handleItemClick} />
           <Menu.Menu position='right'>
@@ -57,7 +64,7 @@ class Drive extends Component {
               <div style={{display: 'flex', flexDirection: 'row'}}>
                 <div style={{width: '80em', padding: 20}}>
                   <Divider horizontal>Set your own schedule</Divider>
-                  <p>You can drive with Uber anytime, day or night, 365 days a year. When you drive is always up to you, so it never interferes with the important things in your life.</p>
+                  <p>You can drive with Wuji anytime, day or night, 365 days a year. When you drive is always up to you, so it never interferes with the important things in your life.</p>
                 </div>
                 <div style={{width: '80em', padding: 20}}>
                   <Divider horizontal>Earn more at every turn</Divider>
@@ -88,7 +95,7 @@ class Drive extends Component {
                 <div style={{width: '80em', padding: 20}}>
                   <Label circular color='olive' style={{ display: 'flex'}}>3 Get the app and go</Label>
                   <Divider hidden />
-                  <p>Once you’re approved to drive with Uber as an independent contractor, we’ll provide everything you need to be a success on the road.</p>
+                  <p>Once you’re approved to drive with Wuji as an independent contractor, we’ll provide everything you need to be a success on the road.</p>
                 </div>
               </div>
               <Button color='olive' icon size='big'>
@@ -123,18 +130,18 @@ class Drive extends Component {
               <Card>
                 <Card.Content>
                   <Card.Meta>
-                    About the app
+                    Our commitment to drivers
                   </Card.Meta>
                   <Card.Header>
-                    Designed just for drivers
+                    The wujiPOOL improvements you asked for
                   </Card.Header>
                   <Card.Description>
-                    When you want to make money, just open the app and you’ll start to receive trip requests. You’ll get information about your rider and directions to their location and destination. When the trip is over, you’ll receive another nearby request. And if you're ready to get off the road, you can sign off at any time.
+                    Our latest phase of 180 Days of Change is focused on POOL improvements that help you earn more and stress less. We’re directly addressing your feedback, with a new way to earn and upgrades that will make for better rides and ratings on POOL.
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
                   <a>
-                    SEE HOW IT WORKS
+                    LEARN MORE
                     <Icon name='right angle' />
                   </a>
                 </Card.Content>
@@ -165,7 +172,7 @@ class Drive extends Component {
                 <div style={{width: '80em', padding: 20}}>
                   <Header as='h3'>Insurance</Header>
                   <Divider />
-                  <p>Uber maintains insurance policies that provide coverage for drivers from the time they accept a trip until they reach the rider’s destination.</p>
+                  <p>Wuji maintains insurance policies that provide coverage for drivers from the time they accept a trip until they reach the rider’s destination.</p>
                   <a>
                     SEE POLICY COVERAGE
                     <Icon name='right angle' />
@@ -176,7 +183,7 @@ class Drive extends Component {
                 <div style={{width: '80em', padding: 20}}>
                   <Header as='h3'>Safety</Header>
                   <Divider />
-                  <p>When you drive with Uber, you get 24/7 driver support and insurance coverage. And all riders are verified with their personal information and phone number, so you’ll know who you’re picking up and so will we.</p>
+                  <p>When you drive with Wuji, you get 24/7 driver support and insurance coverage. And all riders are verified with their personal information and phone number, so you’ll know who you’re picking up and so will we.</p>
                   <a>
                     HOW WE KEEP YOU SAFE
                     <Icon name='right angle' />
@@ -194,7 +201,7 @@ class Drive extends Component {
                 <div style={{width: '80em', padding: 20}}>
                   <Header as='h3'>Delivery</Header>
                   <Divider />
-                  <p>Grab your bike, scooter, or car and boost your earnings by making deliveries with Uber. Enjoy a flexible schedule and quick earning potential all while cruising around town.</p>
+                  <p>Grab your bike, scooter, or car and boost your earnings by making deliveries with Wuji. Enjoy a flexible schedule and quick earning potential all while cruising around town.</p>
                   <a>
                     MORE ABOUT DELIVERY
                     <Icon name='right angle' />
@@ -203,7 +210,9 @@ class Drive extends Component {
               </div>
             </Container>
           </div>
+          
         </div>
+
       </div>
     )
   }
