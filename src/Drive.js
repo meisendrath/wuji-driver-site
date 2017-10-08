@@ -13,6 +13,7 @@ import {
 } from 'semantic-ui-react'
 import './Drive.css';
 
+
 class Drive extends Component {
 
   state = { activeItem: 'drive' }
@@ -41,7 +42,7 @@ class Drive extends Component {
         </Menu>
         <div style={{paddingTop: '3.6em'}}>
           <div style={{width: '13em', padding: 20, position: 'fixed', }}>
-            <Button basic color='olive' icon size='big'>
+            <Button color='olive' icon size='big'>
               Start driving with Wuji
               <br />
               <br />
@@ -49,27 +50,27 @@ class Drive extends Component {
               <Icon name='signup' />
             </Button>
           </div>
-          <div className='App-header'>
+          <div className='App-header-even'>
             <Container>
-              <Header inverted as='h1'>Work that puts you first</Header>
-              <Header inverted as='h2'>Drive when you want, earn what you need</Header>
+              <Header as='h1'>Work that puts you first</Header>
+              <Header as='h2'>Drive when you want, earn what you need</Header>
               <div style={{display: 'flex', flexDirection: 'row'}}>
                 <div style={{width: '80em', padding: 20}}>
-                  <Divider inverted horizontal>Set your own schedule</Divider>
+                  <Divider horizontal>Set your own schedule</Divider>
                   <p>You can drive with Uber anytime, day or night, 365 days a year. When you drive is always up to you, so it never interferes with the important things in your life.</p>
                 </div>
                 <div style={{width: '80em', padding: 20}}>
-                  <Divider inverted  horizontal>Earn more at every turn</Divider>
+                  <Divider horizontal>Earn more at every turn</Divider>
                   <p>Trip fares start with a base amount, then increase with time and distance. And when demand is higher than normal, drivers earn more.</p>
                 </div>
                 <div style={{width: '80em', padding: 20}}>
-                  <Divider inverted  horizontal>Let the app lead the way</Divider>
+                  <Divider horizontal>Let the app lead the way</Divider>
                   <p>Just tap and go. You’ll get turn-by-turn directions, tools to help you earn more, and 24/7 support. And if you don’t have a smartphone, we can connect you to one.</p>
                 </div>
               </div>
             </Container>
           </div>
-          <div style={{padding: '20px'}}>
+          <div className='App-header-even'>
             <Container>
               <Header as='h4'>Hit the road</Header>
               <Header as='h2'>It’s easy to get started</Header>
@@ -140,7 +141,7 @@ class Drive extends Component {
               </Card></div>
             </div>
           </div>
-          <div style={{padding: '20px'}}>
+          <div className='App-header-even'>
             <Container>
               <div style={{display: 'flex', flexDirection: 'row'}}>
                 <div style={{width: '80em', padding: 20}}>
